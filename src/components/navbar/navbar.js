@@ -18,7 +18,7 @@ class Navbar extends Component {
         <a className="nav-link" href="matakansenturk.com">Features</a>
       </li>
       <li className="nav-item">
-        <a clclassNameass="nav-link" href="matakansenturk.com">Pricing</a>
+        <a className="nav-link" href="matakansenturk.com">Pricing</a>
       </li>
     </ul>
   </div>
