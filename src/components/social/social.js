@@ -6,9 +6,9 @@ class Social extends Component {
     render() { 
         return ( 
             <ul className="social-buttons">
-                <li><a href="/social.css"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li><a href="/social.css"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="/social.css"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
          );
     }
