@@ -1,7 +1,12 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import './App.css';
 import Timeline from '../timeline/timeline'
 import Social from '../social/social'
+import Projects from '../projects/projects'
 import Navbar from '../navbar/navbar'
 
 function App() {
@@ -10,20 +15,23 @@ function App() {
       <Navbar />
       <br/><br/>
       <br/><br/>
-      <div className="row">
-        <div className="col"></div>
-        <div className="col">
-          <Social />
+      <Router>
+        <div className="row">
+          <div className="col-sm-0 col-lg-2"></div>
+          <div className="col-sm-12 col-lg-8">
+           <Route exact path="/projects">
+              <Projects />
+            </Route>
+            <Route exact path="/social">
+              <Social />
+            </Route>
+            <Route exact path="/timeline">
+              <Timeline />
+            </Route>
+          </div>
+          <div className="col-sm-0 col-lg-2"></div>
         </div>
-        <div className="col"></div>
-      </div>
-      <div className="row">
-        <div className="col-sm-0 col-lg-2"></div>
-        <div className="col-sm-12 col-lg-8">
-          <Timeline />
-        </div>
-        <div className="col-sm-0 col-lg-2"></div>
-      </div>
+      </Router>
     </div>
   );
 }
