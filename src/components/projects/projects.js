@@ -7,7 +7,7 @@ class Projects extends Component {
      }
 
      componentDidMount() {
-        fetch("http://matakansenturk.com:3000/api/projects")
+        fetch("http://matakansenturk.com:4000/api/projects")
           .then((response) => response.json())
           .then((a) => this.setState({ projects: a }));
       }
@@ -16,9 +16,9 @@ class Projects extends Component {
         return ( 
             <div className="container">
                 {this.state.projects.map((project) => (
-                    <div className="row project">
+                    <div className="row project" key={project.name}>
                         <div className="col-3">
-                            <img src={project.image} height="300" width="600" className="img-fluid img-thumbnail" alt="roject_image"/>
+                            <img src={project.image} height="200" width="400" className="w-100" alt="project_image"/>
                         </div>
                         <div className="col-9">
                             <h1 className="project-title">{project.name}</h1>

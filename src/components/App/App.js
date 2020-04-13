@@ -4,10 +4,10 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
-import Timeline from '../timeline/timeline'
-import Social from '../social/social'
+import Experiences from '../experiences/experiences'
 import Projects from '../projects/projects'
 import Navbar from '../navbar/navbar'
+import Profile from '../profile/profile'
 
 function App() {
   return (
@@ -19,14 +19,14 @@ function App() {
         <div className="row">
           <div className="col-sm-0 col-lg-2"></div>
           <div className="col-sm-12 col-lg-8">
-           <Route exact path="/projects">
+            <Route exact path="/">
+              <Profile />
+            </Route>
+            <Route exact path="/projects">
               <Projects />
             </Route>
-            <Route exact path="/social">
-              <Social />
-            </Route>
-            <Route exact path="/timeline">
-              <Timeline />
+            <Route exact path="/experiences">
+              <Experiences />
             </Route>
           </div>
           <div className="col-sm-0 col-lg-2"></div>
