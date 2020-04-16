@@ -1,15 +1,26 @@
 .project {
-    background-color: white;
-    border-radius: 20px;
+    background-image: url("../../resources/container.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
 }
-
+/*
 .project:hover {
     background-color: yellow;
     transform: rotate(0deg) skewX(45deg);
-}
+}*/
 
 .project-title {
     font-size: 20px;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.5);
 }
